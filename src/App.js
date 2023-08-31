@@ -5,7 +5,7 @@ import Products from "./Components/Products";
 import Widgets from "./Components/Widget";
 
 export const config = {
-  endpoint: `http://localhost:3000`,
+  endpoint: `http://localhost:5000`,
 };
 
 function App() {

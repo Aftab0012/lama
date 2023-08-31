@@ -76,18 +76,18 @@ function Homepage() {
 
           {/* Display Projects Section */}
           {projectArray.length !== 0 && (
-            <div className="w-3/4">
-              <div className="flex justify-between">
-                <div className="text-5xl font-bold text-blue mb-4 ">
-                  <span className="text-customPurple ">Projects</span>
+            <div className="w-full sm:w-3/4">
+              <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
+                <div className="text-3xl sm:text-5xl font-bold text-blue mb-2 sm:mb-0">
+                  <span className="text-customPurple">Projects</span>
                 </div>
-                <div>
+                <div className="mt-2 sm:mt-0 mb-3">
                   <Button
                     onClick={handleProjectForm}
-                    className=" z-1 flex w-[230px] h-[43px] mt-1 bg-black text-lg text-white font-semibold"
+                    className="z-1 flex w-full sm:w-[230px] h-[43px] bg-black text-base sm:text-lg text-white font-semibold justify-center items-center"
                   >
-                    <span>
-                      <AddCircleIcon className="mr-3" />
+                    <span className="mr-2">
+                      <AddCircleIcon />
                     </span>
                     Create New Project
                   </Button>
