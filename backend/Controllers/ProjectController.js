@@ -15,7 +15,7 @@ async function addProject(req, res) {
     const addedProjects = await Project.create({ name });
     res.status(201).json(addedProjects);
   } catch (error) {
-    res.status(400).json({ message: "Failed to create category" });
+    res.status(400).json({ message: "Failed to create project" });
   }
 }
 

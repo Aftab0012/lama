@@ -5,7 +5,7 @@ async function getUsers(req, res) {
     const users = await User.find({});
     res.json(users);
   } catch (error) {
-    res.status(400).json({ message: "No categories listed yet" });
+    res.status(400).json({ message: "No users listed yet" });
   }
 }
 
@@ -20,7 +20,7 @@ async function addUsers(req, res) {
       res.status(201).json(addedUsers);
     }
   } catch (error) {
-    res.status(400).json({ message: "Failed to create category" });
+    res.status(400).json({ message: "Failed to create user" });
   }
 }
 
