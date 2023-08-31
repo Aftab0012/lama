@@ -1,4 +1,4 @@
-Welcome to the Project Management System! This application allows you to manage and track projects effortlessly. With an intuitive user interface and seamless interactions, you can create, view, and manage your projects efficiently.
+Welcome to the Project! This application allows you to manage and track projects effortlessly. With an intuitive user interface and seamless interactions, you can create, view, and manage your projects efficiently.
 
 ## Features
 
