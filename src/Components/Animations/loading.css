@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+.center {
+  /* position: relative; */
+  /* background-color: darkblue; */
+  text-align: center;
+  color: rgb(8, 8, 10);
+  box-sizing: border-box;
+  font-size: larger;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 1rem;
+  margin-top: 350px;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
