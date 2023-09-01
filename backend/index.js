@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -14,7 +15,9 @@ const PORT = 5000;
 //   windowMs: 15 * 60 * 1000, // 15 minutes
 //   max: 25, // Limit each IP to 25 requests per windowMs
 // });
-const DB_URI = "mongodb+srv://aftab:aftabaaa@cluster0.rpusyx6.mongodb.net/";
+
+const DB_URI = process.env.DB_URI;
+console.log(DB_URI);
 const urlParams = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
