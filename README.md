@@ -40,7 +40,7 @@ To get started with this project, follow these steps:
 - Node.js
 - Express.js
 
-# Note:- Redux will only work if backend is not connected, The Redux was implemented to add static project data from state, So as of now this website is connected to backend but the Redux fucntionality is not implemented in react components, If you wanna use just use reacts dispatch() and useSelector() hooks to make it useable .
+### Note:- Redux will only work if backend is not connected, The Redux was implemented to add static project data from state, So as of now this website is connected to backend but the Redux fucntionality is not implemented in react components, If you wanna use just use reacts dispatch() and useSelector() hooks to make it useable .
 
 ## Available Scripts
 
