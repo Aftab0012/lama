@@ -15,9 +15,14 @@ const PORT = 5000;
 //   max: 25, // Limit each IP to 25 requests per windowMs
 // });
 
-const DB_URI = "mongodb://127.0.0.1:27017/lama";
+const urlParams = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+const DB_URI = "mongodb+srv://aftab:aftabaaa@cluster0.rpusyx6.mongodb.net/";
 mongoose
-  .connect(DB_URI)
+  .connect(DB_URI, urlParams)
   .then(() => {
     console.log("Connected to Db at, " + DB_URI);
   })
