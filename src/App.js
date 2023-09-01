@@ -7,7 +7,7 @@ import Loading from "./Components/Animations/LoadingAnimation";
 import { useState, useEffect } from "react";
 
 export const config = {
-  endpoint: `http://localhost:5000`,
+  endpoint: `https://lama-backend2342.onrender.com`,
 };
 
 function App() {
