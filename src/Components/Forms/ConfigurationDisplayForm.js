@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { config } from "../../App";
 import axios from "axios";
+import { message } from "antd";
 
 // ConfigurationDisplayForm component
 function ConfigurationDisplayForm({ displayForm }) {
@@ -40,6 +41,8 @@ function ConfigurationDisplayForm({ displayForm }) {
       .catch((error) => {
         console.error("Error sending data:", error);
       });
+
+    message.success("Form submitted", 2); // 2 seconds duration
   };
 
   // Render the form

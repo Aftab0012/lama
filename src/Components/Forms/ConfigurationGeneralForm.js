@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { config } from "../../App";
 import axios from "axios";
+import { message } from "antd";
 
 /**
  * ConfigurationGeneralForm component.
@@ -10,7 +11,7 @@ import axios from "axios";
 function ConfigurationGeneralForm({ generalForm }) {
   // State variables for form inputs
   const [BotName, setBotName] = useState("");
-  const [message, setMessage] = useState("");
+  const [messages, setMessage] = useState("");
   const [placeholderVal, setplaceholderVal] = useState("");
 
   // Handle form submission
@@ -18,7 +19,7 @@ function ConfigurationGeneralForm({ generalForm }) {
     e.preventDefault();
     const dataToSend = {
       name: BotName,
-      message: message,
+      message: messages,
       placeholderVal: placeholderVal,
     };
 
@@ -32,11 +33,13 @@ function ConfigurationGeneralForm({ generalForm }) {
       .catch((error) => {
         console.error("Error sending data:", error);
       });
+
+    message.success("Form submitted", 2); // 2 seconds duration
   };
 
   return (
     <>
-      {console.log(BotName, message, placeholderVal)}
+      {console.log(BotName, messages, placeholderVal)}
       {generalForm && (
         <div className="flex flex-col space-y-6 p-6">
           {/* Chatbot Name */}
@@ -56,7 +59,7 @@ function ConfigurationGeneralForm({ generalForm }) {
             />
           </div>
 
-          {/* Welcome Message */}
+          {/* Welcome messages */}
           <div>
             <label
               className="block text-2xl font-bold mb-1"
@@ -68,7 +71,7 @@ function ConfigurationGeneralForm({ generalForm }) {
               className="w-full py-2 px-4 bg-white rounded-lg border focus:outline-none focus:ring focus:border-blue-300"
               type="text"
               id="welcomeMessage"
-              value={message}
+              value={messages}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>

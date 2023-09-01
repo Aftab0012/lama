@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { config } from "../../App";
+import { message } from "antd";
 
 /**
  * MediaUpload component for uploading media data.
@@ -38,6 +39,8 @@ function MediaUpload(props) {
       .catch((error) => {
         console.error("Error sending data:", error);
       });
+
+    message.success("Media Uploaded", 2); // 2 seconds duration
   };
 
   return (

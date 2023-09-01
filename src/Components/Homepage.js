@@ -81,7 +81,7 @@ function Homepage() {
                 <div className="text-3xl sm:text-5xl font-bold text-blue mb-2 sm:mb-0">
                   <span className="text-customPurple">Projects</span>
                 </div>
-                <div className="mt-2 sm:mt-0 mb-3">
+                <div className="mt-2  mb-3 mt-5">
                   <Button
                     onClick={handleProjectForm}
                     className="z-1 flex w-full sm:w-[230px] h-[43px] bg-black text-base sm:text-lg text-white font-semibold justify-center items-center"

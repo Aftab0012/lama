@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
 import { config } from "../../App";
+import { message } from "antd";
 
 /**
  * ProjectForm component for submitting project data.
@@ -40,6 +41,8 @@ function ProjectForm(props) {
       .catch((error) => {
         console.error("Error sending data:", error);
       });
+
+    message.success("Project Added", 2); // 2 seconds duration
   };
 
   return (
