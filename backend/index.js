@@ -14,13 +14,12 @@ const PORT = 5000;
 //   windowMs: 15 * 60 * 1000, // 15 minutes
 //   max: 25, // Limit each IP to 25 requests per windowMs
 // });
-
+const DB_URI = "mongodb+srv://aftab:aftabaaa@cluster0.rpusyx6.mongodb.net/";
 const urlParams = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 };
 
-const DB_URI = "mongodb+srv://aftab:aftabaaa@cluster0.rpusyx6.mongodb.net/";
 mongoose
   .connect(DB_URI, urlParams)
   .then(() => {
