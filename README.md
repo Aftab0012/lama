@@ -28,7 +28,7 @@ To get started with this project, follow these steps:
 
 4. Start the development server: `npm start`
 
-5. Open your web browser and navigate to `http://localhost:3000` to access the application.
+5. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Technologies Used
 
